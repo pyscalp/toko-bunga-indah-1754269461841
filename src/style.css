@@ -1,0 +1,170 @@
+/* Toko Bunga Indah - CSS Styling */
+
+/* Colors */
+:root {
+  --primary-color: #F2D7D5; /* Soft Pink - Adaptable */
+  --secondary-color: #A7D1AB; /* Soft Green - Adaptable */
+  --accent-color: #E6B8AF; /* Light Coral - Adaptable */
+  --text-color: #333;
+  --background-color: #fff;
+  --button-color: #558B2F; /* Dark Green */
+  --button-hover: #457224;
+}
+
+/* Typography */
+body {
+  font-family: 'Poppins', sans-serif; /* Consider a free Indonesian-friendly font */
+  line-height: 1.6;
+  margin: 0;
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('hero-image.jpg'); /* Replace with your hero image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Services Section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 50px 0;
+}
+
+.service {
+  background-color: var(--primary-color);
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Gallery Section */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+
+/* Testimonials Section */
+.testimonials {
+  background-color: var(--secondary-color);
+  padding: 50px 0;
+  color: white;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+
+/* Button Styles */
+.btn {
+  background-color: var(--button-color);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .gallery img {
+    width: 100%;
+  }
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* WhatsApp Integration (requires JavaScript for actual functionality) */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+
+/*Smooth Animations (example - requires keyframes)*/
+.animated-element {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Add more styles as needed for other sections and components */
